@@ -1,24 +1,36 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import Button from '@material-ui/core/Button';
+
+import { Layout } from './Layout/Layout';
+import { HelloWorld } from './components/HelloWorld';
 import './App.css';
 
-function App() {
+const App = () =>  {
+  const [isShowText, setIsShowText] = useState(false);
+  const [counter, setCounter] = useState(1);
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+      {/* <header className="App-header">
+      </header> */}
+      <Layout>
+        <HelloWorld text={'Hello world'} counter={counter} isShowText={isShowText} /> 
+        <Button
+          onClick={() => setIsShowText(prevShowText => !prevShowText )} 
+          variant='contained'
+          color='primary'
         >
-          Learn React
-        </a>
-      </header>
+          Show text.
+        </Button>
+        <Button 
+          onClick={() => setCounter((prevCounter) => prevCounter + 1)} 
+          variant='outlined'
+          color='secondary'
+        >
+          Add counter
+        </Button>
+      </Layout>
+
     </div>
   );
 }
