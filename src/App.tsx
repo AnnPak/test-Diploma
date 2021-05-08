@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Button from '@material-ui/core/Button';
 
-import { Layout } from './Layout/Layout';
+import { Layout } from 'Layout/Layout';
 import { HelloWorld } from './components/HelloWorld';
 import './App.css';
 
