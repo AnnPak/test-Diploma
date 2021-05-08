@@ -1,21 +1,21 @@
 import styled from 'styled-components';
 
-/** 
- * 1) Добавить флекс 
+/**
+ * 1) Добавить флекс
  * 2) Растянуть body на всю ширину Flex-grow (-shrink)
  * 3) Добавить header, добавить меню
- * 4) 
-*/
- 
-export const wrapper = styled.div`
+ * 4)
+ */
+
+export const Wrapper = styled.div`
   height: 100%;
 `;
 
-export const footer = styled.div`
+export const Footer = styled.div`
   height: 10rem;
   background-color: blue;
 `;
 
-export const body = styled.div`
-  background-color: #F5F5F5;
+export const Body = styled.div`
+  background-color: #f5f5f5;
 `;

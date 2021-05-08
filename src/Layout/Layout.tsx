@@ -1,25 +1,15 @@
 import React from 'react';
 
-import * as S from './layout.styled.js';
+import * as S from './layout.styled';
 
-interface Props {
-    
-}
+export const Layout: React.FC = ({ children }) => {
+  return (
+    <S.Wrapper>
+      <S.Body>{children}</S.Body>
 
-export const Layout: React.FC<Props> = ({ children }) => {
-    return (
-        <S.wrapper>
-            <S.body>
-              {children}
-            </S.body>
-
-            <S.footer>
-                <span>
-                  Development by Anna
-                </span>
-            </S.footer>
-        </S.wrapper>
-
-        
-    )
-}
+      <S.Footer>
+        <span>Development by Anna</span>
+      </S.Footer>
+    </S.Wrapper>
+  );
+};
