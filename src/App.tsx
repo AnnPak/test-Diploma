@@ -11,8 +11,6 @@ const App: React.FC = () => {
 
   return (
     <div className="App">
-      {/* <header className="App-header">
-      </header> */}
       <Layout>
         <HelloWorld text="Hello world" counter={counter} isShowText={isShowText} />
         <Button onClick={() => setIsShowText((prevShowText) => !prevShowText)} variant="contained" color="primary">
