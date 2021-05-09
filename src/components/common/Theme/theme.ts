@@ -7,11 +7,15 @@ const theme = createMuiTheme({
     primary: {
       main: colors.primary,
     },
+    secondary: {
+      main: colors.secondary,
+    },
   },
   overrides: {
     MuiAppBar: {
       root: {
         background: 'linear-gradient(180deg ,#FFFFFF 0%,#ECEEF9 100%)',
+        boxShadow: 'none',
       },
     },
     MuiTypography: {

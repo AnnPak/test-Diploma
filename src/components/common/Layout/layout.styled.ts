@@ -1,12 +1,5 @@
 import styled from 'styled-components';
 
-/**
- * 1) Добавить флекс
- * 2) Растянуть body на всю ширину, использовать Flex-grow (-shrink)
- * 3) Добавить header, добавить меню
- * 4)
- */
-
 export const Wrapper = styled.div`
   display: flex;
   height: 100vh;

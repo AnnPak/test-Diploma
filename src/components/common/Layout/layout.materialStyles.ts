@@ -11,4 +11,7 @@ export const useStyles = makeStyles({
   link: {
     textDecoration: 'none',
   },
+  linkWrapper: {
+    display: 'flex',
+  },
 });
