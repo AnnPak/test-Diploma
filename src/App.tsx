@@ -1,26 +1,17 @@
-import React, { useState } from 'react';
-import Button from '@material-ui/core/Button';
+import React from 'react';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import { ThemeProvider } from '@material-ui/core/styles';
 
-import { Layout } from 'Layout/Layout';
-import { HelloWorld } from './components/HelloWorld';
-import './App.css';
+import theme from 'components/common/Theme/theme';
+import { Router } from 'components/Router/Router';
 
 const App: React.FC = () => {
-  const [isShowText, setIsShowText] = useState(false);
-  const [counter, setCounter] = useState(1);
-
   return (
-    <div className="App">
-      <Layout>
-        <HelloWorld text="Hello world" counter={counter} isShowText={isShowText} />
-        <Button onClick={() => setIsShowText((prevShowText) => !prevShowText)} variant="contained" color="primary">
-          Show text.
-        </Button>
-        <Button onClick={() => setCounter((prevCounter) => prevCounter + 1)} variant="outlined" color="secondary">
-          Add counter
-        </Button>
-      </Layout>
-    </div>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+
+      <Router />
+    </ThemeProvider>
   );
 };
 

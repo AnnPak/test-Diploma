@@ -25,7 +25,11 @@
     "src"
   ],
   "path":{ 
-    "src/*": ["src/*"]
+    "src/*": ["src/*"],
+    "router/*": ["src/components/Router/*"],
+    "pages/*": ["src/components/pages/*"],
+    "domain/*": ["src/components/domain/*"],
+    "common/*": ["src/components/common/*"],
   }
 
 }
