@@ -40,12 +40,12 @@ export const Layout: React.FC<Props> = ({ children }) => {
                   Профиль
                 </Typography>
               </Link>
-              <Link to="/reg" className={classes.link}>
+              <Link to="/signUp" className={classes.link}>
                 <Typography variant="h5" color="primary" className={classes.title}>
                   Регистрация
                 </Typography>
               </Link>
-              <Link to="/auth" className={classes.link}>
+              <Link to="/signIn" className={classes.link}>
                 <Typography variant="h5" color="primary" className={classes.title}>
                   Авторизация
                 </Typography>

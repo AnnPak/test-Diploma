@@ -1,5 +1,5 @@
 import React from 'react';
 
-export const RegistrationPage: React.FC = () => {
+export const SignUpPage: React.FC = () => {
   return <div>Регистрация</div>;
 };

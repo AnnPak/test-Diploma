@@ -1,5 +1,5 @@
 import React from 'react';
 
-export const AutorizationPage: React.FC = () => {
+export const SignInPage: React.FC = () => {
   return <div>Авторизация</div>;
 };
