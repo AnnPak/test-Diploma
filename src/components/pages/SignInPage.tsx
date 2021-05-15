@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { SignIn, SignInContainer } from 'components/domain/SignIn';
+
 export const SignInPage: React.FC = () => {
-  return <div>Авторизация</div>;
+  return <SignInContainer component={SignIn} />;
 };
